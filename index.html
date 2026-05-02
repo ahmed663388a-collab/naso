@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naso healthy chocolate</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1469980461390734');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1469980461390734&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Playfair+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #D4A853;
+            --dark-gold: #B8860B;
+            --chocolate: #3E2723;
+            --dark-chocolate: #2D1B18;
+            --cream: #FFF8E7;
+            --white: #FFFFFF;
+            --accent: #8B4513;
+            --success: #2E7D32;
+            --text-dark: #1A1A1A;
+            --text-light: #666666;
+            --shadow: 0 10px 40px rgba(0,0,0,0.15);
+            --shadow-hover: 0 20px 60px rgba(0,0,0,0.25);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--cream);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            transition: direction 0.3s;
+        }
+
+        html[lang="en"] body {
+            font-family: 'Cairo', 'Playfair Display', sans-serif;
+        }
+
+        /* ========== HERO ========== */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--dark-chocolate) 0%, var(--chocolate) 50%, var(--accent) 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        .hero-content { text-align: center; z-index: 2; padding: 2rem; max-width: 900px; }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(212,168,83,0.2);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            color: var(--gold);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease 0.2s both;
+            line-height: 1.1;
+        }
+        .hero h1 span {
+            display: block;
+            font-size: 0.5em;
+            color: var(--white);
+            font-family: 'Cairo', sans-serif;
+            font-weight: 300;
+            margin-top: 0.5rem;
+        }
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease 0.4s both;
+            line-height: 1.8;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            color: var(--chocolate);
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(212,168,83,0.4);
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease 0.6s both;
+            border: none;
+            cursor: pointer;
+        }
+        .hero-cta:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(212,168,83,0.6); }
+        .hero-cta i { font-size: 1.3rem; }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem; left: 50%;
+            transform: translateX(-50%);
+            color: var(--gold);
+            animation: bounce 2s infinite;
+            font-size: 1.5rem;
+        }
+
+        /* ========== NAVIGATION ========== */
+        .navbar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+        .navbar.scrolled {
+            background: rgba(45,27,24,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+            padding: 0.8rem 2rem;
+        }
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--gold);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+        html[lang="en"] .nav-links a::after { right: auto; left: 0; }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* ===== LANGUAGE SWITCHER ===== */
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.1);
+            border: 1.5px solid rgba(255,255,255,0.3);
+            color: var(--white);
+            padding: 0.45rem 1.1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            letter-spacing: 0.5px;
+        }
+        .lang-switch:hover {
+            background: var(--gold);
+            color: var(--chocolate);
+            border-color: var(--gold);
+        }
+        .lang-switch .lang-flag { font-size: 1rem; }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--gold);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ========== SECTIONS ========== */
+        section { padding: 6rem 2rem; position: relative; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-label {
+            display: inline-block;
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--chocolate);
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* ========== FEATURES ========== */
+        .features { background: var(--white); }
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            background: var(--cream);
+            transition: all 0.4s ease;
+            border: 1px solid transparent;
+        }
+        .feature-card:hover { transform: translateY(-10px); box-shadow: var(--shadow); border-color: var(--gold); }
+        .feature-icon {
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem; color: var(--white);
+        }
+        .feature-card h3 { font-size: 1.3rem; color: var(--chocolate); margin-bottom: 0.8rem; }
+        .feature-card p { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; }
+
+        /* ========== PRODUCTS ========== */
+        .products { background: linear-gradient(180deg, var(--cream) 0%, var(--white) 100%); }
+        .products-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .product-card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            position: relative;
+            border: 1px solid rgba(212,168,83,0.1);
+        }
+        .product-card:hover { transform: translateY(-15px); box-shadow: var(--shadow-hover); }
+        .product-badge {
+            position: absolute;
+            top: 1.5rem; right: 1.5rem;
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            color: var(--chocolate);
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(212,168,83,0.4);
+        }
+        html[lang="en"] .product-badge { right: auto; left: 1.5rem; }
+        .product-badge.extra { background: linear-gradient(135deg, #C62828, #B71C1C); color: var(--white); }
+        .product-image { width: 100%; height: 320px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+        .product-card:hover .product-image { transform: scale(1.05); }
+        .product-image-wrapper { overflow: hidden; position: relative; }
+        .product-image-wrapper::after {
+            content: '';
+            position: absolute; bottom: 0; left: 0; right: 0;
+            height: 100px;
+            background: linear-gradient(transparent, rgba(255,255,255,0.9));
+        }
+        .product-info { padding: 1.5rem 2rem 2rem; }
+        .product-name { font-size: 1.3rem; font-weight: 700; color: var(--chocolate); margin-bottom: 0.5rem; }
+        .product-weight { color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem; }
+        .product-price {
+            font-size: 1.8rem; font-weight: 800; color: var(--gold); margin-bottom: 1rem;
+            display: flex; align-items: baseline; gap: 0.3rem;
+        }
+        .product-price .currency { font-size: 1rem; font-weight: 600; }
+        .product-ingredients { background: var(--cream); padding: 1rem; border-radius: 12px; margin-bottom: 1rem; }
+        .product-ingredients h4 { font-size: 0.9rem; color: var(--chocolate); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .product-ingredients p { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; }
+        .nutrition-btn {
+            width: 100%; padding: 0.8rem;
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: var(--chocolate);
+            border-radius: 10px;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 1rem;
+            display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+        }
+        .nutrition-btn:hover { background: var(--gold); color: var(--white); }
+        .nutrition-table { display: none; background: var(--cream); border-radius: 12px; padding: 1rem; margin-bottom: 1rem; animation: slideDown 0.3s ease; }
+        .nutrition-table.active { display: block; }
+        .nutrition-table table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        .nutrition-table th, .nutrition-table td { padding: 0.6rem; text-align: right; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        html[lang="en"] .nutrition-table th,
+        html[lang="en"] .nutrition-table td { text-align: left; }
+        .nutrition-table th { color: var(--chocolate); font-weight: 700; }
+        .nutrition-table td { color: var(--text-light); }
+        .allergy-warning {
+            background: #FFF3E0;
+            border-right: 4px solid #FF9800;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: #E65100;
+            margin-bottom: 1rem;
+            display: flex; align-items: flex-start; gap: 0.5rem;
+        }
+        html[lang="en"] .allergy-warning { border-right: none; border-left: 4px solid #FF9800; }
+        .allergy-warning i { margin-top: 0.2rem; }
+        .order-btn {
+            width: 100%; padding: 1rem;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            border: none; border-radius: 12px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.1rem; font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+            box-shadow: 0 5px 20px rgba(37,211,102,0.3);
+        }
+        .order-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,211,102,0.5); }
+
+        /* ========== PRODUCT FEATURE BADGES ========== */
+        .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .product-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            border: 1.5px solid;
+        }
+        .tag-gluten {
+            background: #E8F5E9;
+            border-color: #4CAF50;
+            color: #2E7D32;
+        }
+        .tag-vegan {
+            background: #F3E5F5;
+            border-color: #9C27B0;
+            color: #6A1B9A;
+        }
+        .tag-lactose {
+            background: #E3F2FD;
+            border-color: #2196F3;
+            color: #1565C0;
+        }
+
+        /* ========== MODAL ========== */
+        .modal-overlay {
+            display: none; position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            align-items: center; justify-content: center;
+            padding: 1rem;
+            backdrop-filter: blur(5px);
+        }
+        .modal-overlay.active { display: flex; }
+        .modal {
+            background: var(--white);
+            border-radius: 24px;
+            max-width: 500px; width: 100%;
+            max-height: 90vh; overflow-y: auto;
+            padding: 2rem;
+            position: relative;
+            animation: modalIn 0.4s ease;
+        }
+        .modal-close {
+            position: absolute; top: 1rem; left: 1rem;
+            background: none; border: none;
+            font-size: 1.5rem; color: var(--text-light);
+            cursor: pointer; width: 40px; height: 40px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s;
+        }
+        html[lang="en"] .modal-close { left: auto; right: 1rem; }
+        .modal-close:hover { background: var(--cream); color: var(--chocolate); }
+        .modal h2 { font-family: 'Playfair Display', serif; color: var(--chocolate); margin-bottom: 0.5rem; font-size: 1.8rem; }
+        .modal-product-name { color: var(--gold); font-weight: 700; margin-bottom: 1.5rem; font-size: 1.1rem; }
+        .form-group { margin-bottom: 1.2rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--chocolate); font-size: 0.95rem; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 1rem;
+            border: 2px solid #E0E0E0; border-radius: 12px;
+            font-family: 'Cairo', sans-serif; font-size: 1rem;
+            transition: all 0.3s; background: var(--cream);
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--gold); background: var(--white);
+        }
+        .form-group textarea { resize: vertical; min-height: 80px; }
+        .quantity-selector { display: flex; align-items: center; gap: 1rem; }
+        .qty-btn {
+            width: 45px; height: 45px; border-radius: 12px;
+            border: 2px solid var(--gold); background: var(--white); color: var(--chocolate);
+            font-size: 1.2rem; cursor: pointer; transition: all 0.3s;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .qty-btn:hover { background: var(--gold); color: var(--white); }
+        .qty-value { font-size: 1.3rem; font-weight: 700; color: var(--chocolate); min-width: 40px; text-align: center; }
+        .shipping-options { background: var(--cream); border-radius: 12px; padding: 1rem; margin-bottom: 1.5rem; }
+        .shipping-option {
+            display: flex; align-items: center; gap: 0.8rem;
+            padding: 0.8rem; border-radius: 8px; cursor: pointer; transition: all 0.3s; margin-bottom: 0.5rem;
+        }
+        .shipping-option:hover { background: rgba(212,168,83,0.1); }
+        .shipping-option input[type="radio"] { width: 20px; height: 20px; accent-color: var(--gold); }
+        .shipping-option label { flex: 1; cursor: pointer; font-weight: 600; }
+        .shipping-price { color: var(--gold); font-weight: 700; }
+        .total-price {
+            background: linear-gradient(135deg, var(--chocolate), var(--dark-chocolate));
+            color: var(--gold);
+            padding: 1.2rem; border-radius: 12px; text-align: center; margin-bottom: 1.5rem;
+        }
+        .total-price .label { font-size: 0.9rem; opacity: 0.8; }
+        .total-price .amount { font-size: 2rem; font-weight: 800; }
+        .submit-order {
+            width: 100%; padding: 1.2rem;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white); border: none; border-radius: 12px;
+            font-family: 'Cairo', sans-serif; font-size: 1.1rem; font-weight: 700;
+            cursor: pointer; transition: all 0.3s;
+            display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+        }
+        .submit-order:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(37,211,102,0.4); }
+
+        /* ========== SHIPPING SECTION ========== */
+        .shipping { background: var(--chocolate); color: var(--white); position: relative; overflow: hidden; }
+        .shipping::before {
+            content: '';
+            position: absolute; top: -50%; right: -20%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(212,168,83,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .shipping-grid {
+            max-width: 1000px; margin: 0 auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem; position: relative; z-index: 1;
+        }
+        .shipping-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(212,168,83,0.2);
+            border-radius: 20px; padding: 2rem; text-align: center;
+            transition: all 0.4s; backdrop-filter: blur(10px);
+        }
+        .shipping-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-5px); border-color: var(--gold); }
+        .shipping-card .icon { font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem; }
+        .shipping-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--white); }
+        .shipping-card .price { font-size: 2rem; font-weight: 800; color: var(--gold); }
+        .shipping-card .price span { font-size: 1rem; font-weight: 400; }
+        .shipping-card .condition { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: 0.5rem; }
+
+        /* ========== WHATSAPP FLOAT ========== */
+        .whatsapp-float { position: fixed; bottom: 2rem; left: 2rem; z-index: 999; }
+        html[lang="en"] .whatsapp-float { left: auto; right: 2rem; }
+        .whatsapp-float a {
+            display: flex; align-items: center; gap: 0.8rem;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white); padding: 1rem 2rem;
+            border-radius: 50px; text-decoration: none;
+            font-weight: 700; font-size: 1rem;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+            transition: all 0.3s;
+        }
+        .whatsapp-float a:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 15px 40px rgba(37,211,102,0.6); }
+        .whatsapp-float i { font-size: 1.5rem; }
+
+        /* ========== FOOTER ========== */
+        .footer { background: var(--dark-chocolate); color: var(--white); padding: 4rem 2rem 2rem; text-align: center; }
+        .footer-logo { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem; }
+        .footer-tagline { color: rgba(255,255,255,0.7); margin-bottom: 2rem; font-size: 1.1rem; }
+        .footer-contact { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .footer-contact a { color: var(--gold); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-weight: 600; transition: color 0.3s; }
+        .footer-contact a:hover { color: var(--white); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; margin-top: 2rem; color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes bounce {
+            0%,20%,50%,80%,100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+        @keyframes slideDown { from { opacity: 0; max-height: 0; } to { opacity: 1; max-height: 500px; } }
+        @keyframes modalIn { from { opacity: 0; transform: scale(0.9) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                background: rgba(45,27,24,0.98); flex-direction: column; padding: 2rem; gap: 1.5rem;
+            }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1rem; }
+            .products-grid { grid-template-columns: 1fr; }
+            .whatsapp-float { bottom: 1rem; left: 1rem; }
+            html[lang="en"] .whatsapp-float { left: auto; right: 1rem; }
+            .whatsapp-float a { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+            .modal { padding: 1.5rem; margin: 1rem; }
+            section { padding: 4rem 1rem; }
+        }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-cookie-bite"></i>
+                <span>Naso</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home"     data-ar="الرئيسية"    data-en="Home">الرئيسية</a></li>
+                <li><a href="#products" data-ar="منتجاتنا"    data-en="Products">منتجاتنا</a></li>
+                <li><a href="#shipping" data-ar="التوصيل"     data-en="Shipping">التوصيل</a></li>
+                <li><a href="#contact"  data-ar="تواصل معنا"  data-en="Contact">تواصل معنا</a></li>
+            </ul>
+            <button class="lang-switch" id="langBtn" onclick="toggleLang()">
+                <span class="lang-flag">🇬🇧</span>
+                <span id="langBtnText">EN</span>
+            </button>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="image.png" alt="Naso" style="width:100%;height:auto;max-height:220px;object-fit:cover;object-position:center center;border-radius:16px;margin-bottom:1.8rem;display:block;box-shadow:0 16px 50px rgba(0,0,0,0.45);" onerror="this.style.display='none'">
+            <div class="hero-badge" data-ar="صناعة عربية بمواصفات عالمية 🇯🇴" data-en="Premium Jordanian Craft 🇯🇴">صناعة عربية بمواصفات عالمية 🇯🇴</div>
+            <h1>
+                <span class="hero-main-title">Naso healthy chocolate</span>
+                <span data-ar="تجربة فاخرة من النكهات الطبيعية" data-en="A luxury experience of natural flavors">تجربة فاخرة من النكهات الطبيعية</span>
+            </h1>
+            <p class="hero-subtitle"
+               data-ar="شوكولاتة خالية من السكر المضاف، مصنوعة بأجود المكونات الطبيعية<br>ستيفيا، صويا ولبندق الطبيعي والكاكاو الافريقي النقي 100%"
+               data-en="Sugar-free chocolate made from the finest natural ingredients<br>Stevia, soy & fresh premium nuts with 100% pure African cocoa">
+                شوكولاتة خالية من السكر المضاف، مصنوعة بأجود المكونات الطبيعية<br>
+                ستيفيا، غنية بالبروتين والبندق الطبيعي والكاكاو الافريقي النقي 100%
+            </p>
+            <a href="#products" class="hero-cta">
+                <i class="fas fa-shopping-bag"></i>
+                <span data-ar="اكتشف منتجاتنا" data-en="Explore Our Products">اكتشف منتجاتنا</span>
+            </a>
+        </div>
+        <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="section-header reveal">
+            <div class="section-label" data-ar="لماذا ناسو؟" data-en="Why NASO?">لماذا ناسو؟</div>
+            <h2 class="section-title" data-ar="جودة تستحق الثقة" data-en="Quality You Can Trust">جودة تستحق الثقة</h2>
+            <p class="section-subtitle" data-ar="نختار لك الأفضل دائماً" data-en="We always choose the best for you">نختار لك الأفضل دائماً</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                <h3 data-ar="مكونات طبيعية 100%" data-en="100% Natural Ingredients">مكونات طبيعية 100%</h3>
+                <p data-ar="ستيفيا طبيعية، بندق طبيعي والكاكاو الافريقي النقي 100% بدون أي مواد صناعية" data-en="Natural stevia, fresh hazelnuts & 100% pure African cocoa — no artificial additives">ستيفيا طبيعية، بندق طبيعي والكاكاو الافريقي النقي 100% بدون أي مواد صناعية</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="fas fa-ban"></i></div>
+                <h3 data-ar="خالية من السكر المضاف" data-en="Zero Added Sugar">خالية من السكر المضاف</h3>
+                <p data-ar="0g سكر مضاف - مثالية لنمط الحياة الصحي ومرضى السكري" data-en="0g added sugar — perfect for a healthy lifestyle and diabetics">0g سكر مضاف - مثالية لنمط الحياة الصحي ومرضى السكري</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="fas fa-award"></i></div>
+                <h3 data-ar="صناعة عربية بمواصفات عالمية" data-en="Premium Arab Quality">صناعة عربية بمواصفات عالمية</h3>
+                <p data-ar="صناعة عربية بمواصفات عالمية، طعم لا يُنسى في كل قضمة" data-en="Arab-made to global standards — an unforgettable taste in every bite">صناعة عربية بمواصفات عالمية، طعم لا يُنسى في كل قضمة</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                <h3 data-ar="توصيل سريع" data-en="Fast Delivery">توصيل سريع</h3>
+                <p data-ar="توصيل لجميع مناطق الأردن بأسعار تنافسية وخدمة ممتازة" data-en="Delivery across all of Jordan at competitive prices with excellent service">توصيل لجميع مناطق الأردن بأسعار تنافسية وخدمة ممتازة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-header reveal">
+            <div class="section-label" data-ar="منتجاتنا" data-en="Our Products">منتجاتنا</div>
+            <h2 class="section-title" data-ar="اختار نكهتك المفضلة" data-en="Choose Your Favorite Flavor">اختار نكهتك المفضلة</h2>
+            <p class="section-subtitle" data-ar="كل يوم بتكبر عائلتنا وكل يوم منتج جديد متوفر حاليا 6 نكهات حسب جميع الاذواق ولكل الاعمار" data-en="6 unique flavors starting at just 5 JD (Extra variants: 6 JD)">كل يوم بتكبر عائلتنا وكل يوم منتج جديد متوفر حاليا 6 نكهات حسب جميع الاذواق ولكل الاعمار</p>
+        </div>
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <!-- Shipping Section -->
+    <section class="shipping" id="shipping">
+        <div class="section-header reveal">
+            <div class="section-label" style="color:var(--gold);" data-ar="التوصيل" data-en="Shipping">التوصيل</div>
+            <h2 class="section-title" style="color:var(--white);" data-ar="أسعار التوصيل" data-en="Shipping Rates">أسعار التوصيل</h2>
+            <p class="section-subtitle" style="color:rgba(255,255,255,0.7);" data-ar="توصيل سريع لجميع مناطق المملكة" data-en="Fast delivery to all regions of Jordan">توصيل سريع لجميع مناطق المملكة</p>
+        </div>
+        <div class="shipping-grid">
+            <div class="shipping-card reveal">
+                <div class="icon"><i class="fas fa-store"></i></div>
+                <h3 data-ar="استلام من الفرع" data-en="Branch Pickup">استلام من الفرع</h3>
+                <div class="price"> <span data-ar="" data-en=""></span></div>
+                <div class="condition" data-ar="استلام شخصي من الفرع" data-en="Personal pickup from branch">استلام شخصي من الفرع</div>
+            </div>
+            <div class="shipping-card reveal">
+                <div class="icon"><i class="fas fa-motorcycle"></i></div>
+                <h3 data-ar="عمان - أكثر من 15 دينار" data-en="Amman — Order over 15 JD">عمان - أكثر من 15 دينار</h3>
+                <div class="price">1 <span data-ar="دينار" data-en="JD">دينار</span></div>
+                <div class="condition" data-ar="" data-en="   ">   </div>
+            </div>
+            <div class="shipping-card reveal">
+                <div class="icon"><i class="fas fa-motorcycle"></i></div>
+                <h3 data-ar="عمان - أقل من 15 دينار" data-en="Amman — Order under 15 JD">عمان - أقل من 15 دينار</h3>
+                <div class="price">2 <span data-ar="دنانير" data-en="JD">دنانير</span></div>
+                <div class="condition" data-ar="   " data-en="   ">   </div>
+            </div>
+            <div class="shipping-card reveal">
+                <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+                <h3 data-ar="جميع محافظات الاردن   " data-en="Governorates — Over 3 JD">جميع محافظات الاردن </h3>
+                <div class="price">3 <span data-ar="دينار" data-en="JD">دينار</span></div>
+                <div class="condition" data-ar="   " data-en="   ">   </div>
+            </div>
+            
+            <div class="shipping-card reveal" style="border-color: var(--gold); background: rgba(212,168,83,0.08);">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <h3 data-ar="شحن دولي 🌍" data-en="International Shipping 🌍">شحن دولي 🌍</h3>
+                <div class="price" style="font-size:1.4rem;" data-ar="متاح عند الطلب" data-en="Available on Request">متاح عند الطلب</div>
+                <div class="condition" data-ar="تواصل معنا عبر واتساب لتفاصيل الشحن الدولي" data-en="Contact us via WhatsApp for international shipping details">تواصل معنا عبر واتساب لتفاصيل الشحن الدولي</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-logo">Naso healthy chocolate</div>
+        <p class="footer-tagline" data-ar="نكهة فاخرة.. صحة مثالية" data-en="Luxury Flavor.. Perfect Health">نكهة فاخرة.. صحة مثالية</p>
+        <div class="footer-contact">
+            <a href="https://wa.me/962797215180" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                00962-797-215-180
+            </a>
+            <a href="#">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-ar="الأردن" data-en="Jordan">الأردن</span>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p data-ar="© 2026 Naso healthy chocolate - جميع الحقوق محفوظة" data-en="© 2026 Naso healthy chocolate - All Rights Reserved">© 2026 Naso healthy chocolate - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/962797215180" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</span>
+        </a>
+    </div>
+
+    <!-- Order Modal -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h2 data-ar="إتمام الطلب" data-en="Complete Your Order">إتمام الطلب</h2>
+            <p class="modal-product-name" id="modalProductName"></p>
+
+            <div class="form-group">
+                <label data-ar="الكمية" data-en="Quantity">الكمية</label>
+                <div class="quantity-selector">
+                    <button class="qty-btn" onclick="changeQty(-1)">-</button>
+                    <span class="qty-value" id="qtyValue">1</span>
+                    <button class="qty-btn" onclick="changeQty(1)">+</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="customerName" data-ar="الاسم الكامل *" data-en="Full Name *">الاسم الكامل *</label>
+                <input type="text" id="customerName" data-ar-placeholder="أدخل اسمك الكامل" data-en-placeholder="Enter your full name" placeholder="أدخل اسمك الكامل">
+            </div>
+            <div class="form-group">
+                <label for="customerPhone" data-ar="رقم الهاتف *" data-en="Phone Number *">رقم الهاتف *</label>
+                <input type="tel" id="customerPhone" data-ar-placeholder="مثال: 0797215180" data-en-placeholder="e.g. 0797215180" placeholder="مثال: 0797215180">
+            </div>
+            <div class="form-group">
+                <label for="customerArea" data-ar="المنطقة / العنوان *" data-en="Area / Address *">المنطقة / العنوان *</label>
+                <input type="text" id="customerArea" data-ar-placeholder="مثال: عبدون، عمان" data-en-placeholder="e.g. Abdoun, Amman" placeholder="مثال: عبدون، عمان">
+            </div>
+
+            <div class="shipping-options">
+                <label style="display:block;margin-bottom:0.8rem;font-weight:700;color:var(--chocolate);" data-ar="طريقة التوصيل" data-en="Shipping Method">طريقة التوصيل</label>
+                <div class="shipping-option">
+                    <input type="radio" name="shipping" id="pickup" value="0" checked onchange="updateTotal()">
+                    <label for="pickup" data-ar="استلام من الفرع" data-en="Branch Pickup">استلام من الفرع</label>
+                    <span class="shipping-price"> </span>
+                </div>
+                <div class="shipping-option">
+                    <input type="radio" name="shipping" id="ammanOver30" value="1" onchange="updateTotal()">
+                    <label for="ammanOver30" data-ar="عمان - أكثر من 15 دينار" data-en="Amman — Over 15 JD">عمان - أكثر من 15 دينار</label>
+                    <span class="shipping-price">1 JD</span>
+                </div>
+                <div class="shipping-option">
+                    <input type="radio" name="shipping" id="ammanUnder30" value="2" onchange="updateTotal()">
+                    <label for="ammanUnder30" data-ar="عمان - أقل من 15 دينار" data-en="Amman — Under 15 JD">عمان - أقل من 15 دينار</label>
+                    <span class="shipping-price">2 JD</span>
+                </div>
+                <div class="shipping-option">
+                    <input type="radio" name="shipping" id="govOver30" value="3" onchange="updateTotal()">
+                    <label for="govOver30" data-ar="جميع محافظات الاردن  " data-en="Governorates — Over 3 JD">جميع المحافظات الاردن </label>
+                    <span class="shipping-price">3 JD</span>
+                </div>
+                
+                <div class="shipping-option">
+                    <input type="radio" name="shipping" id="international" value="0" onchange="updateTotal()">
+                    <label for="international" data-ar="🌍 شحن دولي (السعر عند التواصل)" data-en="🌍 International Shipping (price on request)">🌍 شحن دولي (السعر عند التواصل)</label>
+                    <span class="shipping-price" data-ar="يُحدد لاحقاً" data-en="TBD">يُحدد لاحقاً</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="orderNotes" data-ar="ملاحظات إضافية (اختياري)" data-en="Additional Notes (optional)">ملاحظات إضافية (اختياري)</label>
+                <textarea id="orderNotes" data-ar-placeholder="أي ملاحظات خاصة بالطلب..." data-en-placeholder="Any special notes for your order..." placeholder="أي ملاحظات خاصة بالطلب..."></textarea>
+            </div>
+
+            <div class="total-price">
+                <div class="label" data-ar="الإجمالي" data-en="Total">الإجمالي</div>
+                <div class="amount"><span id="totalAmount">5</span> JD</div>
+            </div>
+
+            <button class="submit-order" onclick="submitOrder()">
+                <i class="fab fa-whatsapp"></i>
+                <span data-ar="إرسال الطلب عبر واتساب" data-en="Send Order via WhatsApp">إرسال الطلب عبر واتساب</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+    const products = [
+        {
+            id: 1,
+            name: "ناسو شوكولاتة دهن كيدز",
+            nameEn: "NASO Chocolate Spread Kids",
+            weight: "350 غرام", weightEn: "350g",
+            price: 5, isExtra: false,
+            image: "image1.png",
+            badge: "مميز", badgeEn: "Featured",
+            ingredients: "ستيفيا، زيت جوز هند، بودرة الكاكاو، بودرة الحليب البقري، بودرة مصل الحليب، بندق طبيعي، مستحلب ليسيسين الصويا E322، فانيلين، ملح طعام.",
+            ingredientsEn: "Stevia, coconut oil, cocoa powder, cow milk powder, whey powder, natural hazelnuts, soy lecithin E322, vanillin, table salt.",
+            isVegan: false,
+            allergy: null, allergyEn: null,
+            nutrition: { calories:"43 kcal", totalFat:"2.9g", saturatedFat:"1.3g", transFat:"0g", carbs:"3.9g", fiber:"0g", sugars:"0g", addedSugars:"0g", protein:"<1g", sodium:"0.04mg" }
+        },
+        {
+            id: 2,
+            name: "ناسو شوكولاتة دهن إكسترا بندق",
+            nameEn: "NASO Chocolate Spread Extra Hazelnut",
+            weight: "350 غرام", weightEn: "350g",
+            price: 6, isExtra: true,
+            image: "image2.png",
+            badge: "إكسترا", badgeEn: "Extra",
+            ingredients: "ستيفيا، زيت جوز هند، بودرة الكاكاو، بودرة الحليب البقري، بودرة مصل الحليب، بندق طبيعي، مستحلب ليسيسين الصويا E322، فانيلين، ملح طعام.",
+            ingredientsEn: "Stevia, coconut oil, cocoa powder, cow milk powder, whey powder, natural hazelnuts, soy lecithin E322, vanillin, table salt.",
+            isVegan: false,
+            nutrition: { calories:"44 kcal", totalFat:"3.1g", saturatedFat:"1.4g", transFat:"0g", carbs:"3.9g", fiber:"0g", sugars:"0g", addedSugars:"0g", protein:"<1g", sodium:"0.04mg" }
+        },
+        {
+            id: 3,
+            name: "ناسو شوكولاتة دهن نباتي",
+            nameEn: "NASO Chocolate Spread Vegan",
+            weight: "350 غرام", weightEn: "350g",
+            price: 5, isExtra: false,
+            image: "image3.png",
+            badge: "مميز", badgeEn: "Featured",
+            ingredients: "ستيفيا، زيت جوز هند، حليب جوز هند، بودرة الكاكاو، الكاكاو، بندق طبيعي، مستحلب ليسيسين الصويا E322، فانيلين، ملح طعام.",
+            ingredientsEn: "Stevia, coconut oil, coconut milk, cocoa powder, cocoa, natural hazelnuts, soy lecithin E322, vanillin, table salt.",
+            isVegan: true,
+            nutrition: { calories:"44 kcal", totalFat:"3g", saturatedFat:"1.3g", transFat:"0g", carbs:"4g", fiber:"0g", sugars:"0g", addedSugars:"0g", protein:"<1g", sodium:"0.04mg" }
+        },
+        {
+            id: 4,
+            name: "ناسو شوكولاتة دهن نباتي إكسترا بندق",
+            nameEn: "NASO Vegan Chocolate Spread Extra Hazelnut",
+            weight: "350 غرام", weightEn: "350g",
+            price: 6, isExtra: true,
+            image: "image4.png",
+            badge: "إكسترا", badgeEn: "Extra",
+            ingredients: "ستيفيا، زيت جوز هند، حليب جوز هند، بودرة الكاكاو، الكاكاو، بندق طبيعي، مستحلب ليسيسين الصويا E322، فانيلين، ملح طعام.",
+            ingredientsEn: "Stevia, coconut oil, coconut milk, cocoa powder, cocoa, natural hazelnuts, soy lecithin E322, vanillin, table salt.",
+            isVegan: true,
+            nutrition: { calories:"45 kcal", totalFat:"3.1g", saturatedFat:"1.3g", transFat:"0g", carbs:"4g", fiber:"0g", sugars:"0g", addedSugars:"0g", protein:"<1g", sodium:"0.04mg" }
+        },
+        {
+            id: 5,
+            name: "ناسو شوكولاتة دهن بالفول السوداني",
+            nameEn: "NASO Chocolate Spread Peanut",
+            weight: "350 غرام", weightEn: "350g",
+            price: 5, isExtra: false,
+            image: "image5.png",
+            badge: "مميز", badgeEn: "Featured",
+            ingredients: "ستيفيا، زيت جوز هند، بودرة الكاكاو، بودرة الحليب البقري، بودرة مصل الحليب، فول سوداني، مستحلب ليسيسين الصويا E322، فانيلين، ملح طعام.",
+            ingredientsEn: "Stevia, coconut oil, cocoa powder, cow milk powder, whey powder, peanuts, soy lecithin E322, vanillin, table salt.",
+            isVegan: false,
+            allergy: null, allergyEn: null,
+            nutrition: { calories:"43 kcal", totalFat:"2.9g", saturatedFat:"1.3g", transFat:"0g", carbs:"3.9g", fiber:"0g", sugars:"0g", addedSugars:"0g", protein:"<1g", sodium:"0.04mg" }
+        },
+        {
+            id: 6,
+            name: "ناسو شوكولاتة دهن دارك",
+            nameEn: "NASO Dark Chocolate Spread",
+            weight: "350 غرام", weightEn: "350g",
+            price: 5, isExtra: false,
+            image: "image6.png",
+            badge: "مميز", badgeEn: "Featured",
+            ingredients: "ستيفيا، زيت جوز هند، بودرة الكاكاو، بودرة الحليب البقري، بودرة مصل الحليب، بندق طبيعي، مستحلب ليسيسين الصويا E322، فانيلين، ملح طعام.",
+            ingredientsEn: "Stevia, coconut oil, cocoa powder, cow milk powder, whey powder, natural hazelnuts, soy lecithin E322, vanillin, table salt.",
+            isVegan: false,
+            allergy: null, allergyEn: null,
+            nutrition: { calories:"43 kcal", totalFat:"2.9g", saturatedFat:"1.3g", transFat:"0g", carbs:"3.9g", fiber:"0g", sugars:"0g", addedSugars:"0g", protein:"<1g", sodium:"0.04mg" }
+        }
+    ];
+
+    let isEnglish = false;
+    let currentProduct = null;
+    let currentQty = 1;
+
+    function toggleLang() {
+        isEnglish = !isEnglish;
+        const html = document.getElementById('html-root');
+        html.setAttribute('lang', isEnglish ? 'en' : 'ar');
+        html.setAttribute('dir', isEnglish ? 'ltr' : 'rtl');
+        document.getElementById('langBtnText').textContent = isEnglish ? 'AR' : 'EN';
+        document.querySelector('.lang-flag').textContent = isEnglish ? '🇸🇦' : '🇬🇧';
+        document.querySelectorAll('[data-ar][data-en]').forEach(el => {
+            el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-ar');
+        });
+        document.querySelectorAll('[data-ar-placeholder]').forEach(el => {
+            el.placeholder = isEnglish ? el.getAttribute('data-en-placeholder') : el.getAttribute('data-ar-placeholder');
+        });
+        renderProducts();
+        document.querySelectorAll('.reveal:not(.active)').forEach(el => observer.observe(el));
+    }
+
+    function renderProducts() {
+        const grid = document.getElementById('productsGrid');
+        const t = isEnglish;
+        grid.innerHTML = products.map(p => `
+            <div class="product-card reveal active">
+                <div class="product-badge ${p.isExtra ? 'extra' : ''}">${t ? p.badgeEn : p.badge}</div>
+                <div class="product-image-wrapper">
+                    <img src="${p.image}" alt="${t ? p.nameEn : p.name}" class="product-image"
+                         onerror="this.src='https://via.placeholder.com/400x320/3E2723/D4A853?text=${encodeURIComponent(t ? p.nameEn : p.name)}'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">${t ? p.nameEn : p.name}</h3>
+                    <p class="product-weight">${t ? p.weightEn : p.weight}</p>
+                    <div class="product-price"><span class="currency">JD</span>${p.price.toFixed(2)}</div>
+                    <div class="product-tags">
+                        <span class="product-tag tag-gluten">
+                            🌾 ${t ? 'Gluten Free' : 'خالي من الجلوتين'}
+                        </span>
+                        ${p.isVegan ? `
+                        <span class="product-tag tag-vegan">
+                            🌿 ${t ? 'Vegan' : 'نباتي'}
+                        </span>
+                        <span class="product-tag tag-lactose">
+                            🥛 ${t ? 'Lactose Free' : 'خالي من اللاكتوز'}
+                        </span>` : ''}
+                    </div>
+                    <div class="product-ingredients">
+                        <h4><i class="fas fa-list"></i> ${t ? 'Ingredients' : 'المكونات'}</h4>
+                        <p>${t ? p.ingredientsEn : p.ingredients}</p>
+                    </div>
+                    ${(t ? p.allergyEn : p.allergy) ? `
+                    <div class="allergy-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span><strong>${t ? 'Allergy Warning:' : ''}</strong> ${t ? p.allergyEn : p.allergy}</span>
+                    </div>` : ''}
+                    <button class="nutrition-btn" onclick="toggleNutrition(${p.id})">
+                        <i class="fas fa-chart-bar"></i>
+                        ${t ? 'Nutrition Facts (per 10g)' : 'القيمة الغذائية (لكل 10غ)'}
+                    </button>
+                    <div class="nutrition-table" id="nutrition-${p.id}">
+                        <table>
+                            <tr><th>${t ? 'Value' : 'القيمة'}</th><th>${t ? 'Nutrient' : 'المكون'}</th></tr>
+                            <tr><td>${p.nutrition.calories}</td><td>${t ? 'Calories' : 'سعرات حرارية'}</td></tr>
+                            <tr><td>${p.nutrition.totalFat}</td><td>${t ? 'Total Fat' : 'دهون كلية'}</td></tr>
+                            <tr><td>${p.nutrition.saturatedFat}</td><td>${t ? 'Saturated Fat' : 'دهون مشبعة'}</td></tr>
+                            <tr><td>${p.nutrition.transFat}</td><td>${t ? 'Trans Fat' : 'دهون متحولة'}</td></tr>
+                            <tr><td>${p.nutrition.carbs}</td><td>${t ? 'Carbohydrates' : 'كربوهيدرات'}</td></tr>
+                            <tr><td>${p.nutrition.sugars}</td><td>${t ? 'Sugars' : 'سكر'}</td></tr>
+                            <tr><td>${p.nutrition.addedSugars}</td><td>${t ? 'Added Sugars' : 'سكر مضاف'}</td></tr>
+                            <tr><td>${p.nutrition.protein}</td><td>${t ? 'Protein' : 'بروتين'}</td></tr>
+                            <tr><td>${p.nutrition.sodium}</td><td>${t ? 'Sodium' : 'صوديوم'}</td></tr>
+                        </table>
+                    </div>
+                    <button class="order-btn" onclick="openOrderModal(${p.id})">
+                        <i class="fab fa-whatsapp"></i>
+                        ${t ? 'Order Now via WhatsApp' : 'اطلب الآن عبر واتساب'}
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function toggleNutrition(id) {
+        document.getElementById(`nutrition-${id}`).classList.toggle('active');
+    }
+
+    function openOrderModal(productId) {
+        currentProduct = products.find(p => p.id === productId);
+        currentQty = 1;
+        document.getElementById('modalProductName').textContent = isEnglish ? currentProduct.nameEn : currentProduct.name;
+        document.getElementById('qtyValue').textContent = currentQty;
+        document.getElementById('orderModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        updateTotal();
+    }
+
+    function closeModal() {
+        document.getElementById('orderModal').classList.remove('active');
+        document.body.style.overflow = '';
+        currentProduct = null;
+    }
+
+    function changeQty(delta) {
+        currentQty = Math.max(1, currentQty + delta);
+        document.getElementById('qtyValue').textContent = currentQty;
+        updateTotal();
+    }
+
+    function updateTotal() {
+        if (!currentProduct) return;
+        const shipping = parseFloat(document.querySelector('input[name="shipping"]:checked').value);
+        const total = (currentProduct.price * currentQty) + shipping;
+        document.getElementById('totalAmount').textContent = total.toFixed(2);
+    }
+
+    function submitOrder() {
+        const name  = document.getElementById('customerName').value.trim();
+        const phone = document.getElementById('customerPhone').value.trim();
+        const area  = document.getElementById('customerArea').value.trim();
+        const notes = document.getElementById('orderNotes').value.trim();
+        const shippingOption = document.querySelector('input[name="shipping"]:checked');
+        if (!name || !phone || !area) {
+            alert(isEnglish ? 'Please fill in all required fields.' : 'يرجى ملء جميع الحقول المطلوبة');
+            return;
+        }
+        const shippingCost = parseFloat(shippingOption.value);
+        const total        = (currentProduct.price * currentQty) + shippingCost;
+        const productName  = isEnglish ? currentProduct.nameEn : currentProduct.name;
+        const shippingLabel = shippingOption.nextElementSibling.textContent;
+        const message = isEnglish
+            ? `🍫 *New Order — Naso healthy chocolate* 🍫\n\n📦 *Product:* ${productName}\n⚖️ *Weight:* ${currentProduct.weightEn}\n🔢 *Qty:* ${currentQty}\n💰 *Unit Price:* ${currentProduct.price.toFixed(2)} JD\n\n🚚 *Shipping:* ${shippingLabel} (${shippingCost} JD)\n💵 *Total:* ${total.toFixed(2)} JD\n\n👤 *Name:* ${name}\n📱 *Phone:* ${phone}\n📍 *Area:* ${area}\n${notes ? `📝 *Notes:* ${notes}` : ''}\n\n✅ Payment: Cash on Delivery ❤️`
+            : `🍫 *طلب جديد من Naso healthy chocolate* 🍫\n\n📦 *المنتج:* ${productName}\n⚖️ *الوزن:* ${currentProduct.weight}\n🔢 *الكمية:* ${currentQty}\n💰 *سعر الوحدة:* ${currentProduct.price.toFixed(2)} JD\n\n🚚 *التوصيل:* ${shippingLabel} (${shippingCost} JD)\n💵 *الإجمالي:* ${total.toFixed(2)} JD\n\n👤 *الاسم:* ${name}\n📱 *الهاتف:* ${phone}\n📍 *المنطقة:* ${area}\n${notes ? `📝 *ملاحظات:* ${notes}` : ''}\n\n✅ الدفع: عند الاستلام\n\nجزاك الله خيراً ❤️`;
+        window.open(`https://wa.me/962797215180?text=${encodeURIComponent(message)}`, '_blank');
+        closeModal();
+    }
+
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.getElementById('orderModal').addEventListener('click', e => {
+        if (e.target === document.getElementById('orderModal')) closeModal();
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        renderProducts();
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    });
+    </script>
+</body>
+</html>
